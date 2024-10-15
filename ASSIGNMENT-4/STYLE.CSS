@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;600&family=Roboto:wght@400;500;700&family=Lora:wght@400;700&display=swap');
+
+:root {
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-tertiary: 'Raleway', sans-serif;
+    --font-quaternary: 'Roboto', sans-serif;
+    --font-quinary: 'Lora', serif;
+    --color-background: linear-gradient(135deg, #1e3c72, #2a69ac);
+    --color-overlay: rgba(0, 0, 0, 0.6);
+    --color-primary: #ffcc00;
+    --color-secondary: #444;
+    --color-text: #222;
+    --color-muted: #555;
+    --border-colors: #ff5733, #33ff57, #3357ff, #ff33a1, #f3ff33, #33fff8;
+    --color-bg-dark-pink: #d5006d;
+    --animation-speed: 0.3s;
+    --animation-ease: ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--color-bg-dark-pink);
+    color: var(--color-text);
+    line-height: 1.6;
+    transition: background var(--animation-speed), color var(--animation-speed);
+}
+
+.navbar-brand img {
+    transition: transform var(--animation-speed), filter var(--animation-speed);
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.bg-home {
+    background: url('../images/home-background.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    transition: background-color var(--animation-speed), transform var(--animation-speed), border var(--animation-speed);
+    cursor: pointer;
+    border: 4px solid transparent;
+    animation: borderColorChange var(--animation-speed) infinite alternate, bounce 1s infinite;
+}
+
+.icon-circle:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.1) rotate(10deg);
+}
+
+.project-card {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform var(--animation-speed), box-shadow var(--animation-speed), border var(--animation-speed);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid transparent;
+    animation: borderColorChange var(--animation-speed) infinite alternate, pulse 1.5s infinite;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform var(--animation-speed);
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    font-family: var(--font-quinary);
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.project-content p {
+    color: var(--color-muted);
+}
+
+footer .social-icons a {
+    font-size: 1.8rem;
+    color: var(--color-text);
+    margin: 0 10px;
+    transition: color var(--animation-speed), transform var(--animation-speed), border var(--animation-speed);
+    border: 4px solid transparent;
+    animation: borderColorChange var(--animation-speed) infinite alternate;
+}
+
+footer .social-icons a:hover {
+    color: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.btn-danger {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: 4px solid transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color var(--animation-speed), transform var(--animation-speed), border var(--animation-speed);
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.05) rotate(-5deg);
+    animation: borderColorChange var(--animation-speed) infinite alternate;
+}
+
+.form-control {
+    background-color: #222;
+    color: var(--color-text);
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color var(--animation-speed), color var(--animation-speed), border var(--animation-speed);
+}
+
+.form-control:focus {
+    background-color: #444;
+    color: var(--color-text);
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes borderColorChange {
+    0% { border-color: #ff5733; }
+    16.67% { border-color: #33ff57; }
+    33.33% { border-color: #3357ff; }
+    50% { border-color: #ff33a1; }
+    66.67% { border-color: #f3ff33; }
+    83.33% { border-color: #33fff8; }
+    100% { border-color: #ff5733; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s var(--animation-ease) forwards;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-card {
+        transform: scale(1);
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: #f8f9fa;
+    }
+}

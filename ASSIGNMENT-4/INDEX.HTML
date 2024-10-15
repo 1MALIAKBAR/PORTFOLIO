@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Akbar - Front End Developer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+    <!-- Background Music and User Data using Javascript -->
+    <script>
+      alert("Thanks for visiting my Website");
+      var name = prompt("Enter Your Beautiful Name");
+      console.log("Beautiful Name: " + name);
+    
+    </script>
+    
+    <audio id="play" src="bgmusic.mp3" loop autoplay></audio>
+    
+    <script>
+      window.addEventListener('click', () => {
+        document.getElementById("play").play();
+      });
+    </script>
+    
+</head>
+
+<body>
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center animate-slide-in-left" href="#">
+        <img src="LOGO.PNG" alt="Logo" width="70" height="50" class="me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-fade-in-delay" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+<section id="home"
+class="vh-100 d-flex align-items-center justify-content-center text-center text-white position-relative bg-home">
+<div class="overlay"></div>
+<div class="content animate-fade-in-up">
+  <img
+    src="PROFILE_IMAGE.jpg"
+    alt="Ali Akbar" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;">
+    
+    <div class="ali">
+      <h1>I'm Ali Akbar</h1>
+      <p class="lead animate-fade-in">Professional_Developer</p>
+  </div>
+  
+ 
+  <div class="container text-center">
+    <div class="social-icons mt-3">
+      <a href="https://api.whatsapp.com/send/?phone=%2B923102671144&text&type=phone_number&app_absent=0" target="_blank"
+        class="text-white me-3 animate-bounce" style="font-size: 2rem;"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com/imaliakbar.iaa/?__pwa=1" target="_blank"
+        class="text-white me-3 animate-bounce" style="font-size: 2rem;"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCLt1WZ2yLZcMuihvVyFmJZg" target="_blank"
+        class="text-white me-3 animate-bounce" style="font-size: 2rem;"><i class="bi bi-youtube"></i></a>
+      <a href="https://github.com/1MALIAKBAR" target="_blank" class="text-white animate-bounce" style="font-size: 2rem;"><i
+          class="bi bi-github"></i></a>
+
+    </div>
+  </div>
+  <a href="#contact" class="btn btn-danger btn-lg mt-3 animate-pulse">Want to Contact</a>
+</div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-slide-in-right">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="text-center animate-fade-in">Hey there! I’m Ali Akbar—Front End Developer and coffee addict! I create websites so easy to use that even your best mate, who thinks “the cloud” is just a WiFi issue, can navigate them! Picture me chilling on my balcony in Karachi, sipping coffee and wondering why our cricket team can’t hit a six. My designs load faster than your uncle racing to the buffet at a wedding, so if you want a site that’s smoother than my favorite coffee, let’s chat and make something awesome together!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-red">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-slide-in-left">My Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 animate-fade-in">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h4>Front End Development</h4>
+          <p>Expertise in HTML, CSS, JavaScript, and Bootstrap to create responsive and interactive websites.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-1">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-file-earmark-spreadsheet"></i>
+          </div>
+          <h4>MS Office</h4>
+          <p>Proficient in Microsoft Word, Excel, PowerPoint, and Outlook for efficient office management.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-2">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-award"></i>
+          </div>
+          <h4>Academic Qualifications</h4>
+          <p>Successfully completed matriculation with a strong academic record and a commitment to excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-slide-in-right">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4 animate-fade-in">
+          <div class="card project-card bg-secondary text-white">
+            <img
+              src="https://th.bing.com/th/id/R.f1b2459af2ad2b1c087c216de1dae377?rik=la%2bJRHQaBZ8%2fQg&pid=ImgRaw&r=0"
+              class="card-img-top project-image" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">An avenger fan-made first ever proper website that i have made as an assignment this
+                is made by using internal CSS</p>
+                <button type="submit" class="btn btn-danger btn-lg animate-button"><a href="https://aliakbar-fanpage.netlify.app" class="btn btn-danger btn-sm animate-button" target="_blank">View it</a></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-1">
+          <div class="card project-card bg-secondary text-white">
+            <img src="https://th.bing.com/th/id/OIP.3a2UH00KPvVpQreNt-jnYwHaHa?rs=1&pid=ImgDetMain"
+              class="card-img-top project-image" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">This was my 2nd website was made by me when i got skills of CSS it is an assignment
+                from center Aptech-MSG</p>
+                <button type="submit" class="btn btn-danger btn-lg animate-button"><a href="https://aliakbar-guide.netlify.app" class="btn btn-danger btn-sm animate-button" target="_blank">View it</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-2">
+          <div class="card project-card bg-secondary text-white">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vd9ySyzaFMCIJgWIVXGOQZs73yWTDF9D3g&s"              
+              class="card-img-top project-image" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">
+                This project is an assignment which is dummy of Olx mad by me in a limited time and it was made using only CSS HTML and BOOTSTRAP 
+              </p>
+              <button type="submit" class="btn btn-danger btn-lg animate-button"><a href="https://aliakbar-olx.netlify.app" class="btn btn-danger btn-sm animate-button" target="_blank">View it</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="py-5 bg-red">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-slide-in-left">My Hobbies</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 animate-fade-in">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-controller"></i>
+          </div>
+          <h4>E-sports Gaming</h4>
+          <p>Engaging in competitive gaming across various online platforms to sharpen strategic and teamwork skills.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-1">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4>Coding</h4>
+          <p>Developing projects and exploring new technologies to enhance my programming capabilities.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-2">
+          <div class="icon-circle mx-auto mb-3">
+            <i class="bi bi-book"></i>
+          </div>
+          <h4>Reading</h4>
+          <p>Immersing myself in books focused on technology, personal development, and innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-slide-in-right">Contact Me</h2>
+      <p class="text-center mb-5 animate-fade-in">I am open to collaborations and opportunities. Feel free to reach out!
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="animate-slide-in-up" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7983e0c9-62eb-4d1c-827a-929fc0e268bf">
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control bg-dark text-white border-0" id="name" placeholder="Your Name"
+                required name="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-0" id="email"
+                placeholder="your@gmail.com" required name="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control bg-dark text-white border-0" id="message" rows="5"
+                placeholder="ohh you! write a good feedback/message or else..." name="message" required></textarea>
+            </div>
+            <input type="hidden" name="redirect" value="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c67a2e65200577.5bc880079683b.gif">
+            <div class="d-grid">
+              <button type="submit" class="btn btn-danger btn-lg animate-button">Click to Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <marquee scrollamount="20">
+        <p>&copy; 2024 Ali Akbar. All rights reserved.</p>
+      </marquee>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
